@@ -38,6 +38,8 @@ Memory deallocation is used in addition to the procedures outlined above to avoi
 
 **b.) Execution time comparison between sequential and parallel**
 
+https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
 **c.) Detailed analysis and discussion of results**
 
+https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
