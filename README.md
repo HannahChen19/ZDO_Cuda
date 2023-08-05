@@ -10,7 +10,11 @@ The program implements a parallel algorithm for the ZDO algorithm using CUDA. Th
 
   a.2) Memory Prefetching
 
-  Memory prefetching is 
+  To improve memory access patterns in GPU and achieve the goal of reducing the impact of memory latency, memory prefetching is applied to move the data from the main memory to the GPU memory before it is actually needed. This allows more efficient memory access which can  improve the overall program's performance. In the program, 'cudaMemPrefetchAsync' is called to prefetch 'd_graph_node' to the CPU's memory. The 'd_graph_node' is the one holding the graph node data on the GPU. Through 'cudaMemPrefetchAsync', the memory access latency needed when the GPU kernel accesses the graph node data can be minimized.
+
+  a.3) Memory Advise
+
+  
 
 **b.) Execution time comparison between sequential and parallel**
 
