@@ -15,6 +15,10 @@ The program implements a parallel algorithm for the ZDO algorithm using CUDA. Th
 
   a.3) Memory Advise
 
+  In the program, memory advise is implemented with the use of 'cudaMemAdvise'. After using the 'cudaMallocManaged' to allocate the memory for the 'd_graph_node' array, 'cudaMemAdvise' is used to provide memory advise by indicating the preferred memory location for 'd_graph_node', which is on the CPU memory. With the implementation of memory advise, memory transfer can be optimized and data access can be improved. Number of page faults can also be reduced since the GPU now knows where to get the data. This way, the overall performance of the program is improved. The same memory advise technique is also applied to the 'd_results' array for improving performance.
+
+  a.4) CUDA Memory Management
+
   
 
 **b.) Execution time comparison between sequential and parallel**
