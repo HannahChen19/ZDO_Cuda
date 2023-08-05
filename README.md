@@ -19,7 +19,13 @@ The program implements a parallel algorithm for the ZDO algorithm using CUDA. Th
 
   a.4) CUDA Memory Management
 
+  In the program, CUDA Unified Memory is used for allocating and managing the memories accessed by both CPU and GPU. The 'cudaMallocManaged' is used for allocating memories for both 'd_graph_node' and 'd_results' arrays, allowing the CPU and GPU to seamlessly access the data without needing explicit copying. Through the use of 'cudaMallocManaged', memory management is simplified and the complexities of data transfers are reduced since memory is now managed automatically by the CUDA runtime, and it is ensured that data is copied to the GPU when accessed by GPU kernels and copied back to the CPU when accessed by the CPU code.
+
+  a.5) Shared Memory
+
   
+
+--memory deallocation for preventing memory leaks
 
 **b.) Execution time comparison between sequential and parallel**
 
