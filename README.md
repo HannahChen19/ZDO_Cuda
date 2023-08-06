@@ -38,9 +38,9 @@ Memory deallocation is used in addition to the procedures outlined above to avoi
 
 **b.) Execution time comparison between sequential and parallel**
 
-https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
+remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
-<Insert image>
+insert figure
 
 The figure above depicts the execution times of the sequential C kernel and the parallel CUDA kernel. The ZDO algorithm was exposed to a comprehensive execution time comparison between its sequential and parallel versions in this study. The input data are processed step by step in the sequential version, without taking advantage of parallel processing capabilities. The sequential version has an average execution time of **_________** microseconds at various vertex sizes.
 
@@ -50,12 +50,10 @@ The speedup achieved through parallelization in this project is roughly **_____
 
 **c.) Detailed analysis and discussion of results**
 
-https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
+remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
-<Insert image>
+insert figure
 
-Comparisons of execution times in section b revealed that for the ZDO algorithm, the parallel version had faster execution times than the sequential version. This is due to the fact that data in the sequential version is processed step by step, following a linear execution path that runs one operation after another, with no concurrent processing capabilities. As a result, processing times will be longer, especially when the vertex size is huge. In the parallel version, however, the application has parallel processing capabilities, allowing tasks to be completed concurrently. This effectively utilizes existing computing resources and can result in significant execution time reductions, particularly when dealing with computationally complex tasks or huge datasets.
+Comparisons of execution times in section b revealed that for the ZDO algorithm, the parallel version had faster execution times than the sequential version. This is due to the fact that data in the sequential version is processed step by step, following a linear execution path that runs one operation after another, with no concurrent processing capabilities. As a result, processing times will be longer, especially when the vertex size is huge. In the parallel version, however, the application has massive throughput and parallel processing capabilities, allowing tasks to be completed concurrently. This effectively utilizes existing computing resources and can result in significant execution time reductions, particularly when dealing with computationally complex tasks or huge datasets, such as the ZDO algorithm.
 
-
-
-
+It is important to note, however, that because CUDA executions may incur overheads such as thread synchronization overheads, data transfer overheads when transferring data between the CPU and GPU memory, and kernel launch overheads for configuring the GPU for execution and managing thread blocks, execution time of CUDA kernel in small vertex sizes can be longer than the C kernel because the overhead still outweighs the benefits. CUDA overheads may be more noticeable when data transfers occur frequently or when the vertex size.
