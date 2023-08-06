@@ -51,3 +51,11 @@ The speedup achieved through parallelization in this project is roughly **_____
 **c.) Detailed analysis and discussion of results**
 
 https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
+
+<Insert image>
+
+Comparisons of execution times in section b revealed that for the ZDO algorithm, the parallel version had faster execution times than the sequential version. This is due to the fact that data in the sequential version is processed step by step, following a linear execution path that runs one operation after another, with no concurrent processing capabilities. As a result, processing times will be longer, especially when the vertex size is huge. In the parallel version, however, the application has parallel processing capabilities, allowing tasks to be completed concurrently. This effectively utilizes existing computing resources and can result in significant execution time reductions, particularly when dealing with computationally complex tasks or huge datasets.
+
+
+
+
