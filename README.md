@@ -40,6 +40,14 @@ Memory deallocation is used in addition to the procedures outlined above to avoi
 
 https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
+<Insert image>
+
+The figure above depicts the execution times of the sequential C kernel and the parallel CUDA kernel. The ZDO algorithm was exposed to a comprehensive execution time comparison between its sequential and parallel versions in this study. The input data are processed step by step in the sequential version, without taking advantage of parallel processing capabilities. The sequential version has an average execution time of **_________** microseconds at various vertex sizes.
+
+Parallelization techniques were used to parallelize the is_zero_indegree function for the CUDA kernel. This enables the completion of tasks concurrently. Despite the fact that parallelization can increase communication overhead due to synchronization needs, the results were favorable. The parallelized version of the ZDO algorithm attained an average execution time of **_________** microseconds, demonstrating a significant speedup over its sequential equivalent. 
+
+The speedup achieved through parallelization in this project is roughly **_______**. This demonstrates that the parallelized version was able to significantly enhance the algorithm's computational efficiency as well as the algorithm's execution time.
+
 **c.) Detailed analysis and discussion of results**
 
 https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
