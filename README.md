@@ -1,7 +1,7 @@
 # ZDO_Cuda
 CSC612M Final Project - Parallelization of the ZDO algorithm
 
-# A.) Abstract
+# A.) Abstract 
 This project aims to parallelize a new shortest-path problem algorithm called the
 zero-degrees-only (ZDO) algorithm proposed by Amr Elmasry and Ahmed Shokry in
 2018. The main idea of the algorithm is to consider both the relaxable graph and the
