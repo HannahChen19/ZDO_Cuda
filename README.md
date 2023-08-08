@@ -58,7 +58,8 @@ remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCp
 
 
 
-![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/2422af8a-3cd6-4fb7-a440-b69277a4e6c3)
+![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/b0ac2ff8-cecb-48eb-884b-f61908c525fe)
+
 
 Comparisons of execution times in section b revealed that for the ZDO algorithm, the parallel version had faster execution times than the sequential version. This is due to the fact that data in the sequential version is processed step by step, following a linear execution path that runs one operation after another, with no concurrent processing capabilities. As a result, processing times will be longer, especially when the vertex size is huge. In the parallel version, however, the application has massive throughput and parallel processing capabilities, allowing tasks to be completed concurrently. This effectively utilizes existing computing resources and can result in significant execution time reductions, particularly when dealing with computationally complex tasks or huge datasets, such as the ZDO algorithm.
 
