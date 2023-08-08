@@ -126,7 +126,7 @@ It is important to note, however, that because CUDA executions may incur overhea
 
 ## Future recommendation
 * Execute both Cuda and C program on local machine
-* Test more vertix sizes for more accurate data
+* Test more vertex sizes for more accurate data
 
 ## References
 Elmasry, A., & Shokry, A. (2018). A new algorithm for the shortest-path problem.
