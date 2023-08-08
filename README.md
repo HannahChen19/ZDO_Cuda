@@ -40,7 +40,7 @@ lead to race conditions.
 
 
 
-# A.) Parallel algorithm implemented in the program
+# A.) Parallelization using CUDA
 
 ![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/d8769bb3-ce5c-4315-b743-9b2c84b9b64e)
 
