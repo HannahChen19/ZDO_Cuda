@@ -120,7 +120,6 @@ It is important to note, however, that because CUDA executions may incur overhea
 
 
 ## Problems Encountered
-Problems encountered
 * Error encountered when running the CUDA code multiple times
 * Error encountered at large vertex size e.g. 200,0000 vertex
 * Cuda program sometimes break in Google Colab when using free edition
