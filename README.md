@@ -57,9 +57,14 @@ The formula used for the speedup factor is C execution time / CUDA execution tim
 **c.) Detailed analysis and discussion of results**
 
 
+![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/3a52bd61-87fc-45d6-9222-88f275cddd49)
+Analyzing the Rate of increase in running time is hard because the node increase is by a constant size. To make it easier for analysis, it is better to normalize the data.
 
 
-![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/f58c327d-15cb-4a7e-83a3-c1e958459e3e)
+
+![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/99683940-daa8-40de-86c6-4fe09ea760f6)
+
+The results show that the edge increase factor is approximately 2, which is the same as the vertex increase factor. For the C version, there was an average increase of 5.83, much greater than the vertex increase. This suggests a non-linear relationship, making it difficult to scale and estimate the running time for vertex of different sizes. In the CUDA configurations, the 512-blocks configuration had the largest average increase of 1.4, while the 256-blocks had the smallest. We also observed that the 1024-block configuration had a significant increase of 22.46% in its rate of increase in running time, from vertex size 2000-4000 to 4000-8000. This could mean that using the 1024-block for larger vertex and edge sizes would lead to much slower performance and should be limited to small vertex size use. Unfortunately, due to the small test size, it is difficult to determine if this trend will continue.
 
 
 
