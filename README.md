@@ -49,7 +49,7 @@ The figure above depicts the execution times of the sequential C kernel and para
 
 ### REmove => The sequential version has an average execution time of **_________** microseconds at various vertex sizes.
 
-Parallelization techniques were used to parallelize the is_zero_indegree function for the CUDA kernel. This enables the completion of tasks concurrently. Despite the fact that parallelization can increase communication overhead due to synchronization needs, the results were favorable. The parallelized version of the ZDO algorithm attained an average execution time of **_________** microseconds, demonstrating a significant speedup over its sequential equivalent. 
+Parallelization techniques were used to parallelize the is_zero_indegree function for the CUDA kernel. This enables the completion of tasks concurrently. Despite the fact that parallelization can increase communication overhead due to synchronization needs, the results were favorable. The parallelized version of the ZDO algorithm attained an execution time of 166.178 to 214.472 microseconds for 2000 nodes, 218.882 to 248.25 microseconds for 4000 nodes, 248.756 to 319.722 microseconds for 6000 nodes, 274.482 to 319.722 microseconds for 8000 nodes, and 343.558 to 367.904 microseconds for 10000 nodes, demonstrating a significant speedup over its sequential equivalent.
 
 ![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/b792fe42-afe4-4d2e-bfeb-2ac5b71be1f7)
 
