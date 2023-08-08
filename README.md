@@ -40,7 +40,8 @@ Memory deallocation is used in addition to the procedures outlined above to avoi
 
 remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
-insert figure
+![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/9d55cf11-ef35-4d07-bdec-e0e02e4d7987)
+
 
 The figure above depicts the execution times of the sequential C kernel and the parallel CUDA kernel. The ZDO algorithm was exposed to a comprehensive execution time comparison between its sequential and parallel versions in this study. The input data are processed step by step in the sequential version, without taking advantage of parallel processing capabilities. The sequential version has an average execution time of **_________** microseconds at various vertex sizes.
 
