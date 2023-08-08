@@ -38,7 +38,6 @@ Memory deallocation is used in addition to the procedures outlined above to avoi
 
 **b.) Execution time comparison between sequential and parallel**
 
-remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
 ![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/adcdd967-5e0a-4bf7-9ec1-8eb7884c68a0)
 
@@ -47,7 +46,6 @@ remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCp
 
 The figure above depicts the execution times of the sequential C kernel and parallel CUDA kernel with 1024 threads and different block sizes. The ZDO algorithm was exposed to a comprehensive execution time comparison between its sequential and parallel versions in this study. The input data are processed step by step in the sequential version, without taking advantage of parallel processing capabilities. 
 
-### REmove => The sequential version has an average execution time of **_________** microseconds at various vertex sizes.
 
 Parallelization techniques were used to parallelize the is_zero_indegree function for the CUDA kernel. This enables the completion of tasks concurrently. Despite the fact that parallelization can increase communication overhead due to synchronization needs, the results were favorable. The parallelized version of the ZDO algorithm attained an execution time of 166.178 to 214.472 microseconds for 2000 nodes, 218.882 to 248.25 microseconds for 4000 nodes, 248.756 to 319.722 microseconds for 6000 nodes, 274.482 to 351.844 microseconds for 8000 nodes, and 343.558 to 367.904 microseconds for 10000 nodes, demonstrating a significant speedup over its sequential equivalent.
 
@@ -58,7 +56,6 @@ The formula used for the speedup factor is CUDA execution time / C execution tim
 
 **c.) Detailed analysis and discussion of results**
 
-remove -->  https://docs.google.com/spreadsheets/d/1rFoWU5vS_UR2b4-SCICiEz5bUZCpbAbnpUWtYpK1Kjk/edit?usp=sharing
 
 
 
