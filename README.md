@@ -54,7 +54,7 @@ Parallelization techniques were used to parallelize the is_zero_indegree functio
 ![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/b792fe42-afe4-4d2e-bfeb-2ac5b71be1f7)
 
 
-The speedup achieved through parallelization in this project is by a factor of 334.038 to 431.1148 for 2k nodes, 1594.023.038 to 1807.897 for 4k nodes, 3594.764 to 4620.291 for 6k nodes, 6895.165 to 8838.548 for 8k nodes, 10303.49 to 11033.64 for 10k nodes. This demonstrates that the parallelized version was able to significantly enhance the algorithm's computational efficiency as well as the algorithm's execution time.
+The speedup achieved through parallelization in this project is by a factor of 334.038 to 431.1148 for 2000 nodes, 1594.023 to 1807.897 for 4000 nodes, 3594.764 to 4620.291 for 6000 nodes, 6895.165 to 8838.548 for 8000 nodes, 10303.49 to 11033.64 for 10000 nodes. This demonstrates that the parallelized version was able to significantly enhance the algorithm's computational efficiency as well as the algorithm's execution time.
 
 **c.) Detailed analysis and discussion of results**
 
