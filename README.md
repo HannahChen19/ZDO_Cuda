@@ -51,6 +51,9 @@ The figure above depicts the execution times of the sequential C kernel and para
 
 Parallelization techniques were used to parallelize the is_zero_indegree function for the CUDA kernel. This enables the completion of tasks concurrently. Despite the fact that parallelization can increase communication overhead due to synchronization needs, the results were favorable. The parallelized version of the ZDO algorithm attained an average execution time of **_________** microseconds, demonstrating a significant speedup over its sequential equivalent. 
 
+![image](https://github.com/HannahChen19/ZDO_Cuda/assets/140621087/b792fe42-afe4-4d2e-bfeb-2ac5b71be1f7)
+
+
 The speedup achieved through parallelization in this project is roughly **_______**. This demonstrates that the parallelized version was able to significantly enhance the algorithm's computational efficiency as well as the algorithm's execution time.
 
 **c.) Detailed analysis and discussion of results**
