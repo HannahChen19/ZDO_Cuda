@@ -16,8 +16,7 @@ will be helpful in further research and real life application of the algorithm l
 ## a.) Inputs in the project
 The inputs to the project are a graph, vertices and weight of the edges.
 ## b.) Proposed process
-### i. What processes will be parallelized using SIMT (GPU/CUDA) or SIMD-based
-x86-64 assembly project?
+### i. What processes will be parallelized?
 The process that will be parallelized is the process of identifying whether or not a
 vertex has an indegree of zero.
 ### ii. What existing implementations have been done with the proposed process?
@@ -25,13 +24,13 @@ No existing implementations have been done with the
 proposed process. The study in which the group will parallelize included an
 implementation or pseudocode of the algorithm.
 ### iii. Process not parallelized
-#### The main loop that checks the length of the Queue. We decided not to implement
+* The main loop that checks the length of the Queue. We decided not to implement
 this in parallel because it is a single source shortest path algorithm and only one
 vertex is initially touched. Also, each iteration depends on the result of the
 previous iteration. It can also lead to synchronization errors in which the Queue is
 being modified by the dequeue(Q) operation and the scan procedure’s
 enqueue(Q, v) at the same time.
-#### The scan procedure will also not be parallelized. This is because enqueueing
+* The scan procedure will also not be parallelized. This is because enqueueing
 requires a more careful handling of the thread synchronization as it could easily
 lead to race conditions.
 
