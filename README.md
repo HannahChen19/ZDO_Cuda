@@ -119,6 +119,16 @@ Comparisons of execution times reveals that for the ZDO algorithm, the parallel 
 It is important to note, however, that because CUDA executions may incur overheads such as thread synchronization overheads, data transfer overheads when transferring data between the CPU and GPU memory, and kernel launch overheads for configuring the GPU for execution and managing thread blocks, execution time of CUDA kernel in small vertex sizes can be longer than the C kernel because the overhead still outweighs the benefits. CUDA overheads may be more noticeable when data transfers occur frequently or when the vertex size.
 
 
+## Problems Encountered
+Problems encountered
+* Error encountered when running the CUDA code multiple times
+* Error encountered at large vertex size e.g. 200,0000 vertex
+* Cuda program sometimes break in Google Colab when using free edition
+
+## Future recommendation
+* Execute both Cuda and C program on local machine
+* Test more vertix sizes for more accurate data
+
 ## References
 Elmasry, A., & Shokry, A. (2018). A new algorithm for the shortest-path problem.
 Networks. doi:10.1002/net.21870
