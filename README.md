@@ -20,9 +20,7 @@ The inputs to the project are a graph, vertices and weight of the edges.
 x86-64 assembly project?
 The process that will be parallelized is the process of identifying whether or not a
 vertex has an indegree of zero.
-### ii. What existing implementations have been done with the proposed process (i.e.,
-related works)? How would it differ from your proposed implementation if it has been
-parallelized?
+### ii. What existing implementations have been done with the proposed process?
 No existing implementations have been done with the
 proposed process. The study in which the group will parallelize included an
 implementation or pseudocode of the algorithm.
